@@ -1,0 +1,478 @@
+:root {
+    --dark-Blue: hsl(217, 28%, 15%);
+    --dark-Blue: hsl(218, 28%, 13%);
+    --dark-Blue: hsl(216, 53%, 9%);
+    --dark-Blue: hsl(219, 30%, 18%);
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --light-Red: hsl(0, 100%, 63%);  
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    background: hsl(218, 28%, 13%);
+    background-image: url(images/bg-curvy-mobile.svg);
+    color: var(--white);
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+nav img {
+    width: 60px;
+}
+
+ul {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+ul li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+ul li:last-of-type {
+    margin-right: 0;
+}
+
+main {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.img-wrapper {
+    width: 100%;
+}
+
+.img-wrapper img {
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description p {
+    text-align: center;
+    line-height: 20px;
+    padding: 1.5rem;
+}
+
+.start {
+    font-family: "Raleway", sans-serif;
+    color: var(--white);
+    background-image: linear-gradient(to right, hsla(176, 68%, 64%), hsla(198, 60%, 50%));
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    width: 200px;
+    padding: 0.75rem;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.more-info img {
+    width: 50px;
+    margin: 100px 0 30px 0;
+}
+
+.more-info p {
+    line-height: 20px;
+    padding: 0 20px  0 20px;
+}
+
+.more-info h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.img-wrapper2 {
+    width: 100%;
+}
+.secondary-container {
+    margin-top: 200px;
+}
+.img-wrapper2 img {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.see-works h2 {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.see-works p {
+    line-height: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.flyo-works {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid var(--cyan);
+    width: fit-content;
+    margin-bottom: 100px;
+}
+.flyo-works a  {
+    text-decoration: none;
+    color: var(--cyan);
+    margin-bottom: 5px;
+}
+
+.flyo-works img {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.quote-icon {
+    width: 30px;
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.testimonials {
+    margin-bottom: 300px;
+}
+.testimonial {
+    width: 85%;
+    background-color: hsl(219, 30%, 18%);
+    padding: 1.5rem;
+    margin: 20px auto;
+    margin-top: unset;
+    border-radius: 5px;
+
+}
+
+.testimonial p {
+    line-height: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-profile p {
+    margin-bottom: 0;
+}
+
+.author-name {
+    font-weight: 700;
+}
+
+.more-access {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: hsl(219, 30%, 15%);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    width: 93%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    left: 12px;
+    bottom: -150px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.more-access p {
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+
+input, .subscription {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 0.75rem;
+    margin-bottom: 25px;
+}
+
+.subscription {
+    margin-bottom: unset;
+    color: var(--white);
+    background-image: linear-gradient(to right, hsla(176, 68%, 64%), hsla(198, 60%, 50%));
+}
+
+footer {
+    background-color: hsl(216, 53%, 9%);
+    padding: 20px;
+    position: relative;
+}
+
+.logo{
+    margin-top: 200px;
+    margin-bottom: 40px;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.location-container img {
+    margin-right: 20px;
+    height: 15px;
+}
+
+.contacts {
+    margin-bottom: 50px;
+}
+.contacts p {
+    margin-bottom: 20px;
+}
+.contacts p img {
+    margin-right: 15px;
+    width: 13px;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
+.about-us {
+    margin-bottom: 40px;
+}
+
+.about-us p, .contact-us p {
+    margin-bottom: 15px;
+}
+
+.contact-us {
+    margin-bottom: 70px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+
+.icons {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+
+.icons img {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 5px;
+}
+.post {
+    margin-bottom: 0;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .ul li:hover {
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .img-wrapper {
+        width: 950px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .description {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .start:hover {
+        cursor: pointer;
+        background: var(--cyan);
+        font-weight: 700;
+    }
+
+    .more {
+        width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    .more-info {
+        width: 350px;
+    }
+
+    .more-info img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .secondary-container {
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px auto;
+    }
+
+    .img-wrapper2, .see-works {
+        width: 450px;
+    }
+
+    .see-works h2 {
+        font-size: 40px;
+    }
+    
+    .flyo-works:hover,
+    .flyo-works a:hover {
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .testimonial {
+        flex-basis: 30%;
+    }
+    .quote-icon {
+       position: absolute;
+       top: -20px;
+       left: -10px;
+       z-index: -1;
+    }
+
+    .more-access {
+        width: 1000px;
+        left: 20%;
+    }
+    .more-access p {
+        width: 70%;
+    }
+    .error-msg {
+        align-self: flex-start;
+        margin-top: 10px;
+        margin-left: 200px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    input {
+        width: 400px;
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .subscription {
+        width: 200px;
+        padding: 0;
+        height: 40px;
+        transition: 0.2s;
+    }
+
+    .subscription:hover {
+        cursor: pointer;
+        background: var(--cyan);
+        font-weight: 700;
+    }
+    .footer-elements {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .location-container {
+        width: 30%;
+    }
+    .social-icons {
+        margin: 0;
+    }
+
+    .icons:hover {
+        border: 2px solid var(--cyan);
+        cursor: pointer;
+    }
+    .about-us:hover, .contact-us:hover {
+        cursor: pointer;
+    }
+    .about-us a:hover, .contact-us a:hover {
+        cursor: pointer;
+        font-weight: 700;
+    }
+}
